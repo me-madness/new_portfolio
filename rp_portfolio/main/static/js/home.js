@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const nameSearch = document.getElementById("name-search")
     const tags = document.querySelectorAll(".tag")
-    const projects = document.querySelector(".project")
+    const projects = document.querySelectorAll(".project")
 
     function filterProjects() {
         const nameQuery = nameSearch.value.toLowerCase();
@@ -25,9 +25,9 @@ document.addEventListener("DOMContentLoaded", function() {
             projects.forEach((project) => {
                 const projectTags = project.getAttribute("data-tags")
                 if (projectTags.includes(selectedTag)) {
-                    project.style.display = "";
+                    project.style.display = ""
                 } else {
-                    project.style.display = "none";
+                    project.style.display = "none"
                 }
             })
         })
