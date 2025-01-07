@@ -5,10 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title%}Portfolio - Home{% endblock title%}</title>
-    <link rel="stylesheet" href="{%static 'css/base.css'}">
-    {% block extrahead%}
-    {% endblock extrahead%}
+    <title>{% block title %}Portfolio - Home{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block extrahead %}
+    {% endblock %}
 </head>    
 <body>
     <header>
@@ -18,10 +18,10 @@
         </li>    
     </header>
     <main>
-        {% block content%}
-        {% endblock content%}
+        {% block content %}
+        {% endblock %}
     </main>
-    {% block extra_js%}
-    {% endblock extra_js%}
+    {% block extra_js %}
+    {% endblock %}
 <body>
 </html>

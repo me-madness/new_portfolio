@@ -3,9 +3,9 @@
 
 {% block title %}
 Home Page
-{% endblock title %}
+{% endblock %}
 {% block extrahead %}
-<link rel="stylesheet" href="{%static 'css/home.css'}">
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -13,7 +13,7 @@ Home Page
         <input type="text" id="name-search" placeholder="Search by name..."/>
         <div class="tags-list">
             {% for tag in tags %}
-                <button class="tag" data-tag="{{ tag.name| lower }}">{{ tag.name }}</button>
+                <button class="tag" data-tag="{{ tag.name|lower }}">{{ tag.name }}</button>
             {% endfor %}
         </div>
     </div>
