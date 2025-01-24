@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+About me Page
+{% endblock title %}
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/about_me.css' %}">
+{% endblock extrahead %}
+
+{% block content %}
+<p>This is the about me page!</p>
+{% endblock content %}
